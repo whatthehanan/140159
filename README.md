@@ -1,2 +1,2 @@
 # repository for a assignment
-# code from https://github.com/Silverpop/sample-helloworld-ant/ used
+# build.xml template from: https://www.mkyong.com/ant/ant-how-to-create-a-java-project/
