@@ -13,6 +13,8 @@
 	
 	<!-- Output, Jar -->
 	<property name="dist.dir" location="dist" />
+	<property name="test.dir" location="test" />
+	<property name="suite.dir" location="suite" />
 
 	<target name="init">
 		<!-- Create the time stamp -->
@@ -26,7 +28,7 @@
 		<!-- Compile the java code from ${src.dir} into ${build.dir} -->
 		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}" />
 	</target>
-	<target name="Test" depends="init" description="compile the source ">
+	<target name="Test"  description="compile the source ">
 		<!-- Compile the java code from ${src.dir} into ${build.dir} -->
 		<javac includeantruntime="false" srcdir="${test.dir}" destdir="${suite.dir}" />
 	</target>
