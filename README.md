@@ -4,3 +4,4 @@ commit3 testing build trigger
 commit4 test2
 commit5 test3
 commit6
+commit7
