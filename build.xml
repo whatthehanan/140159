@@ -19,11 +19,16 @@
 		<tstamp />
 		<!-- Create the build directory structure used by compile -->
 		<mkdir dir="${build.dir}" />
+		<mkdir dir="${suite.dir}" />
 	</target>
 
 	<target name="compile" depends="init" description="compile the source ">
 		<!-- Compile the java code from ${src.dir} into ${build.dir} -->
 		<javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}" />
+	</target>
+	<target name="Test" depends="init" description="compile the source ">
+		<!-- Compile the java code from ${src.dir} into ${build.dir} -->
+		<javac includeantruntime="false" srcdir="${Tests.dir}" destdir="${suite.dir}" />
 	</target>
 
 	<target name="dist" depends="compile" description="package, output to JAR">
